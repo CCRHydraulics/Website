@@ -96,7 +96,7 @@ nav a:hover {
     padding: 20px;
     border: 1px solid #000066; /* Added border as specified */
     border-radius: 1px; /* Added border-radius as specified */
-    background-image: url(./assets/hd_bg.jpg); 
+    background-image: url(./hd_bg.jpg); 
 
     background-size: cover;
      
@@ -209,23 +209,23 @@ footer{
 }
 
 #andhrapradesh {
-    background-image: url('./assets/AP.jpg');
+    background-image: url('./AP.jpg');
 }
 
 #telangana {
-    background-image: url('./assets/TS.jpg');
+    background-image: url('./TS.jpg');
 }
 
 #tamilnadu {
-    background-image: url('./assets/TN.jpg');
+    background-image: url('./TN.jpg');
 }
 
 #kerala {
-    background-image: url('./assets/KERALA.jpg');
+    background-image: url('./KERALA.jpg');
 }
 
 #karnataka {
-    background-image: url('./assets/KA.jpg');
+    background-image: url('./KA.jpg');
 }
 .service-container {
     width: 60%;
