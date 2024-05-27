@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineer Consultation and Services</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="d-flex">
+            <img src="./assets/logo.png" alt="Logo" class="logo"> 
+            <div class="header-content">
+                <p class="title">CCR Hydraulic Solutions</p>
+                <p class="tagline">Add power to your solutions</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <form class="contact-form" action="mailto:example@example.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <div class="feedback-section">
+                <h2>Client Feedback</h2>
+                <div class="feedback-carousel">
+                    <div class="feedback-slide">
+                        <p class="client-name">John Doe</p>
+                        <p class="client-comment">Excellent service and very professional team!</p>
+                    </div>
+                    <div class="feedback-slide">
+                        <p class="client-name">Jane Smith</p>
+                        <p class="client-comment">Highly recommend for their prompt and efficient service.</p>
+                    </div>
+                    <div class="feedback-slide">
+                        <p class="client-name">Samuel Green</p>
+                        <p class="client-comment">Great experience! The team was very knowledgeable.</p>
+                    </div>
+                    <div class="feedback-slide">
+                        <p class="client-name">Lisa Brown</p>
+                        <p class="client-comment">Very satisfied with the machinery audit and consulting services.</p>
+                    </div>
+                    <div class="feedback-slide">
+                        <p class="client-name">Michael Johnson</p>
+                        <p class="client-comment">The training program was top-notch. Highly recommend!</p>
+                    </div>
+                 
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"><a href="https://github.com/Vasudhanreddy" target="_blank"></a></i>
+        <p class="w3-medium">. <a href="https://github.com/Vasudhanreddy" target="_blank" class="w3-hover-text-green">&copy; 2024 Vasudhan Reddy</a></p>
+    </footer>
+
+    <script>
+        //code for send in contact me form
+    document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.feedback-slide');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.transform = `translateX(${(i - index) * 100}%)`;
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 3500);
+
+    showSlide(currentIndex);
+});
+
+    </script>
+</body>
+</html>
