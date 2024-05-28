@@ -415,6 +415,11 @@ footer {
     background-color: #f9f9f9;
     color: #000066;
 }
+.w3-small-w3-well{
+    color: #000066;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+}
 
 /* Feedback Section Styles */
 .feedback-section {
