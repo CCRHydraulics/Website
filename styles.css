@@ -88,36 +88,37 @@ nav a:hover {
     color: #000066;
 }
 
-/* Hero Section Styles */
 .hero {
     display: flex;
     padding: 20px;
     border-radius: 1px;
     background-image: url(./hd_bg.jpg);
     background-size: cover;
+    background-position: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: justify;
+    color: #000066;
 }
 
 .hero-text-container {
-    width: 75%;
-    height: 600px;
-    background-color: #ffffff;
-    opacity: 70%;
+    width: 85%;
+    max-width: 85%;
+    background-color: rgba(255, 255, 255, 0.9); /* Use rgba for semi-transparent background */
     color: #000066;
-    padding: 20px;
+    padding: 30px;
     font-family: "Poppins", sans-serif;
     font-size: 1.2em;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .hero-text-container h1 {
     color: #cc0000;
     font-family: "Poppins", sans-serif;
-    opacity: 100%;
-    font-size: 2em;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .hero-text-container p {
@@ -125,18 +126,66 @@ nav a:hover {
     font-size: 1.2em;
     font-weight: 200;
     color: #000066;
-    opacity: 100%;
-    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-.hero-text-container button {
-    background-color: #f2f2f2;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    color: #cc0000;
-    border-radius: 5px;
-    padding: 5px;
+.hero-text-container ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
+
+.hero-text-container ul li {
+    margin-bottom: 10px;
+}
+
+.hero-text-container h2 {
+    color: #cc0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .hero-text-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .hero-text-container h1 {
+        font-size: 2em;
+    }
+
+    .hero-text-container h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-text-container p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .hero-text-container h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-text-container h2 {
+        font-size: 1.3em;
+    }
+
+    .hero-text-container p {
+        font-size: 0.9em;
+    }
+}
+
 
 footer {
     height: 12vh;
