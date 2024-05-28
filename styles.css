@@ -7,7 +7,7 @@ body {
     color: #0d0d0d;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,6 @@ body {
 /* Header Styles */
 header {
     background-color: #fcfcfd;
-    /* background-image: url(./assets/bg_header.jpeg); /* Replace with your background image path */
     background-color: #f2f2f2;
     background-size: cover;
     background-position: center;
@@ -26,21 +25,19 @@ header {
     justify-content: space-between;
     padding: 20px 20px;
     box-sizing: border-box;
-    border-bottom: 3px solid #cc0000; /* Added bottom border */
-    
+    border-bottom: 3px solid #cc0000;
 }
 
-
 header img.logo {
-    width: 80px ; 
+    width: 80px;
     height: 80px;
-    border-radius: 6px;/* Adjust size as needed */
+    border-radius: 6px;
 }
 
 .title {
     font-size: 24px;
     font-family: "Audiowide", sans-serif;
-    margin:0px;
+    margin: 0;
     margin-left: 8px;
     color: #cc0000;
     text-align: center;
@@ -48,7 +45,7 @@ header img.logo {
 
 .tagline {
     font-size: 18px;
-    color:#000066;
+    color: #000066;
     font-style: italic;
     font-family: "Sofia", sans-serif;
     margin-top: 8px;
@@ -90,17 +87,15 @@ nav a:hover::after {
 nav a:hover {
     color: #000066;
 }
+
 /* Hero Section Styles */
 .hero {
-    display: flex; /* Allow for stacking text and transparent section */
-    padding: 20px;
-    border: 1px solid #000066; /* Added border as specified */
-    border-radius: 1px; /* Added border-radius as specified */
-    background-image: url(./hd_bg.jpg); 
-
-    background-size: cover;
-     
     display: flex;
+    padding: 20px;
+    border: 1px solid #000066;
+    border-radius: 1px;
+    background-image: url(./hd_bg.jpg);
+    background-size: cover;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -108,59 +103,47 @@ nav a:hover {
 }
 
 .hero-text-container {
-    width: 75%; /* Set width to 50% for initial layout */
-    height: 600px; /* Set height to 500px for initial layout */
-    background-color:#f2f2f2 ; /* Semi-transparent background */
-    color: #000066; /* Text color for contrast */
+    width: 75%;
+    height: 600px;
+    background-color: #ffffff;
+    opacity: 70%;
+    color: #000066;
     padding: 20px;
     font-family: "Poppins", sans-serif;
     font-size: 1.2em;
     border-radius: 10px;
-   
-    
-    
-    
-
 }
 
-.hero-text-container {
-    background-color:#ffffff ; /* Semi-transparent background */
-    opacity: 70%;
-     /* Text color for contrast */
-    padding: 2%;
-    
-    
-    
-}
 .hero-text-container h1 {
     color: #cc0000;
     font-family: "Poppins", sans-serif;
     opacity: 100%;
     font-size: 2em;
 }
-.hero-text-container p  {
+
+.hero-text-container p {
     font-family: "Poppins", sans-serif;
     font-size: 1.2em;
     font-weight: 200;
-    color:#000066;
+    color: #000066;
     opacity: 100%;
     text-align: justify;
-    
-
 }
-.hero-text-container button{
+
+.hero-text-container button {
     background-color: #f2f2f2;
     font-family: "Poppins", sans-serif;
     font-size: 1.2em;
     color: #cc0000;
     border-radius: 5px;
     padding: 5px;
+}
 
-}
-footer{
+footer {
     height: 12vh;
-    
 }
+
+/* About Section Styles */
 .about-container {
     width: 96%;
     margin: auto;
@@ -172,20 +155,21 @@ footer{
     color: #000066;
     opacity: 100%;
 }
-.about-section h2{
+
+.about-section h2 {
     color: #000066;
     font-family: "Poppins", sans-serif;
 }
 
-.about-section p{
+.about-section p {
     margin-bottom: 20px;
     border-radius: 10px;
     font-size: 1.2em;
     text-align: justify;
     font-family: "Poppins", sans-serif;
-
 }
 
+/* States Section Styles */
 .states {
     display: flex;
     justify-content: space-between;
@@ -194,7 +178,7 @@ footer{
 
 .state {
     flex: 1;
-    height: 300px; /* Adjust height as needed */
+    height: 300px;
     margin: 10px;
     display: flex;
     align-items: flex-end;
@@ -227,17 +211,18 @@ footer{
 #karnataka {
     background-image: url('./KA.jpg');
 }
+
+/* Services Section Styles */
 .service-container {
     width: 60%;
     margin: auto;
     padding: 20px;
     height: auto;
-    flex-direction:row;
+    flex-direction: row;
 }
 
 .services-section {
     margin-bottom: 20px;
-    
 }
 
 .services-section h2 {
@@ -250,20 +235,20 @@ footer{
     font-size: 2em;
     color: #000066;
     opacity: 100%;
-    
 }
+
 .services-section h3 {
     color: #cc0000;
-    font-family:  "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.5em;
 }
-.services-section p{
+
+.services-section p {
     color: #000066;
-    font-family:  "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.2em;
     text-align: justify;
 }
-
 
 .service-item {
     background-color: #f9f9f9;
@@ -276,6 +261,7 @@ footer{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Slideshow Section Styles */
 .slideshow-section {
     margin: 20px 20px;
 }
@@ -283,9 +269,8 @@ footer{
 .slideshow-container {
     width: 650px;
     height: 500px;
-    position: relativce;
+    position: relative;
     margin: auto;
-   
 }
 
 .mySlides {
@@ -316,6 +301,7 @@ footer{
     background-color: #f9f9f9;
 }
 
+/* Contact Section Styles */
 .container {
     width: 60%;
     margin: auto;
@@ -332,7 +318,6 @@ footer{
     margin: auto;
     padding: 10px;
     height: 50%;
-    
     font-family: "Poppins", sans-serif;
     font-size: 2em;
     color: #000066;
@@ -359,39 +344,39 @@ footer{
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
     font-size: 1em;
-    font-family:  "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .contact-form button {
     margin-top: 15px;
     padding: 10px;
-    background-color:#000066;
+    background-color: #000066;
     font-size: 1.2em;
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-family:  "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .contact-form button:hover {
-    background-color:#f9f9f9;
+    background-color: #f9f9f9;
     color: #000066;
-
 }
 
+/* Feedback Section Styles */
 .feedback-section {
     margin-top: 20px;
     max-height: 450px;
     font-size: 1.2em;
-    font-family:  "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .feedback-section h2 {
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 10px;
-    font-family:  "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .feedback-carousel {
@@ -423,59 +408,26 @@ footer{
     font-weight: bold;
     margin-bottom: 10px;
     color: #cc0000;
-    font-family:  "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.4em;
 }
 
 .client-comment {
     color: #000066;
-    font-family:  "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.2em;
 }
 
+/* Responsive Design */
 @media (max-width: 1200px) {
-    .container {
-        width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 0.9em;
-    }
-
-    .contact-form button {
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 0.8em;
-    }
-
-    .contact-form button {
-        font-size: 0.8em;
-    }
-}
-@media (max-width: 1200px) {
+    .container,
     .service-container {
         width: 80%;
     }
 }
 
 @media (max-width: 768px) {
+    .container,
     .service-container {
         width: 90%;
     }
@@ -486,6 +438,7 @@ footer{
 }
 
 @media (max-width: 480px) {
+    .container,
     .service-container {
         width: 100%;
         padding: 10px;
@@ -494,57 +447,69 @@ footer{
     .service-item {
         font-size: 0.9em;
     }
+    
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.8em;
+    }
+
+    .contact-form button {
+        font-size: 0.8em;
+    }
 }
-/* Responsive Design */
+
 @media (max-width: 700px) {
     nav a {
         display: block;
         margin: 10px 0;
     }
+
     header {
         flex-direction: column;
-        height: auto; /* Allow height to adjust automatically for small screens */
+        height: auto;
         padding: 20px;
     }
+
     header img.logo {
         margin: 0 auto;
     }
-    header h1, header .tagline {
+
+    header h1,
+    header .tagline {
         text-align: center;
         margin: 10px 0;
     }
+
     .hero-text-container,
     .text-container {
-        width: 100%; /* Stack elements vertically on smaller screens */
-        height: auto; /* Remove fixed height for better readability */
+        width: 100%;
+        height: auto;
     }
-    @media (max-width: 1200px) {
-        .container {
-            width: 80%;
-        }
+}
+
+@media (max-width: 768px) {
+    .states {
+        flex-direction: column;
     }
-    
-    @media (max-width: 768px) {
-        .states {
-            flex-direction: column;
-        }
-    
-        .state {
-            height: 150px; /* Adjust height for smaller screens */
-            margin: 5px 0;
-        }
+
+    .state {
+        height: 150px;
+        margin: 5px 0;
     }
-    
-    @media (max-width: 480px) {
-        .container {
-            width: 100%;
-            padding: 10px;
-        }
-    
-        .state {
-            height: 100px; /* Adjust height for very small screens */
-            font-size: 1em;
-        }
-    } 
-    
+}
+
+@media (max-width: 480px) {
+    .state {
+        height: 100px;
+        font-size: 1em;
+    }
+    .slideshow-container {
+        width: 100%;
+        height: auto;
+        
+
+    }
+    .nav a:hover::after{
+        width: 100%;
+    }
 }
